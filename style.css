@@ -1,0 +1,214 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    max-height: 100vh;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    resize: both;
+    overflow: auto;
+    height: 100vh;
+}
+
+
+.sidebar {
+    background-color:lightsalmon;
+    grid-column: 1 / 2;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.dashboard {
+    align-self: flex-start;
+    margin: 20px;
+    display: flex;
+}
+
+#dashboard {
+    align-self: center;
+    margin-right: 12px;
+}
+
+#dashboardh2 {
+    color: white;
+    font-size: 35px;
+}
+
+.icons {
+    color: white;
+    margin-left: 6px;
+}
+
+.main-sidebar > ul, .rest-sidebar > ul{
+    list-style-type: none;
+}
+
+.main-sidebar > ul > li, .rest-sidebar > ul > li{
+    display: flex;
+    align-items: center;
+}
+
+.header-and-content {
+    background-color: cadetblue;
+    grid-column: 2 / 5;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-height: 100vh;
+}
+
+.header {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    background-color: lightsteelblue;
+    padding: 15px;
+}
+
+.top-left {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#searchbox {
+    width: 750px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: gainsboro;
+}
+
+#searchicon {
+    position: relative;
+    top: 13px;
+}
+
+.top-right {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    gap: 10px;
+}
+
+#bell {
+    align-self: center;
+}
+
+.bottom-left {
+    display: flex;
+    gap: 15px;
+}
+
+.bottom-right > ul {
+    position: relative;
+    right: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-content: flex-start;
+}
+
+.bottom-right > ul > li {
+    padding: 10px 25px;
+    background-color: lightsalmon;
+    border-radius: 15px;
+}
+
+.content {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px;
+    max-height: 100vh;
+}
+
+.projects {
+    gap: 15px;
+}
+
+.goals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cards {
+    background-color: whitesmoke;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.individual-announcements {
+    padding-left: 10px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.people-images {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+#small-kratos {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+}
+
+#big-kratos {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.announcements-and-trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-height: 100vh;
+    margin-left: 20px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements-background {
+    background-color: rgb(234, 227, 137);
+    border-radius:10px;
+}
+
+.trending {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.buddies {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.buddies-background {
+    background-color: rgb(234, 227, 137);
+    border-radius: 10px;
+}
+
+.people-images {
+    border-radius: 50%;
+}
